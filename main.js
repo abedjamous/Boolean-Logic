@@ -78,11 +78,6 @@ switch (true) {
 };
 
 
-
-
-
-
-
 // if(age < 13) {
 //     console.log(firstame + " is a boy");
 // } else if(age >= 13 && age < 20) {
@@ -91,5 +86,26 @@ switch (true) {
 //     console.log(firstame + " is a young man");
 // } else {
 //     console.log(firstame + " is a man");
-// };
+// }
 
+
+// ************************
+// Truthy and Falsy values and equality operators
+
+// falsy values: undefind, null, 0, "", NaN
+// truthy values: not falsy values
+
+let height;
+height = 23;
+
+if ( height || height === 0) {
+    console.log("variable is defined");
+} else {
+    console.log("variable has not beed defined");
+};
+
+
+// Equality operators
+if ( height == "23") {
+    console.log(" the == operators does type coercion!");
+};
